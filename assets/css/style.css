@@ -2,55 +2,97 @@
     font-family: 'Overpass';
     src: url('../font/Overpass/Overpass-VariableFont_wght.ttf');
 }
+
 @font-face {
     font-family: 'Ubuntu';
     src: url('../font/Ubuntu/Ubuntu-Regular.ttf');
 }
-:root{
-    --rouge-clair : hsl(356, 100%, 66%) ;
-    --rouge-tres-clair : hsl(355, 100%, 74%);
-    --bleu-tres-fonce :  hsl(208, 49%, 24%);
 
-    --blanc :hsl(0, 0%, 100%);
-    --bleu-gris : hsl(240, 2%, 79%);
-    --bleu-gris-tres-fonce : hsl(207, 13%, 34%);
-    --bleu-noir-tres-fonce :  hsl(240, 10%, 16%); 
+:root {
+    --rouge-clair: hsl(356, 100%, 66%);
+    --rouge-tres-clair: hsl(355, 100%, 74%);
+    --bleu-tres-fonce: hsl(208, 49%, 24%);
 
-    --bg-rouge-tres-clair : hsl(13, 100%, 72%);
-    --bg-rouge-clair : hsl(353, 100%, 62%);
-    --bg-blue-gris-tres-fonce : hsl(237, 17%, 21%);
-    --bg-bleu-desature-tres-fonce : hsl(237, 23%, 32%);
+    --blanc: hsl(0, 0%, 100%);
+    --bleu-gris: hsl(240, 2%, 79%);
+    --bleu-gris-tres-fonce: hsl(207, 13%, 34%);
+    --bleu-noir-tres-fonce: hsl(240, 10%, 16%);
+
+    --bg-rouge-tres-clair: hsl(13, 100%, 72%);
+    --bg-rouge-clair: hsl(353, 100%, 62%);
+    --bg-blue-gris-tres-fonce: hsl(237, 17%, 21%);
+    --bg-bleu-desature-tres-fonce: hsl(237, 23%, 32%);
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     font-family: 'Overpass';
     font-size: 16px;
     font-weight: 300;
 }
+
 a {
     text-decoration: none;
 }
-ul, ol, li {
+
+ul,
+ol,
+li {
     list-style: none;
 }
-img{
+
+img {
     width: 100%;
 }
-h1{
+
+h1 {
     font-weight: 400;
     white-space: pre-line;
     padding: 2rem 0 1rem 0;
 }
-.desktop{display: none;}
-#openmenu{display: none;}
-.wrap{max-width: 325px;margin: 0 auto;}
-header{
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--bleu-tres-fonce);
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--bleu-tres-fonce);
+    white-space: pre-line;
+}
+
+p {
+    color: var(--bleu-gris-tres-fonce);
+    line-height: 1.7rem;
+}
+
+.desktop {
+    display: none;
+}
+
+#openmenu {
+    display: none;
+}
+
+.wrap {
+    max-width: 325px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+header {
     background: url('../images/bg-pattern-intro-mobile.svg'), linear-gradient(135deg, var(--bg-rouge-tres-clair), var(--bg-rouge-clair));
     background-position: 35% 32%;
     background-repeat: no-repeat;
@@ -58,25 +100,30 @@ header{
     text-align: center;
     color: var(--blanc);
 }
+
 header .wrap nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3rem 0;
 }
+
 header .wrap nav #logo img {
     width: 90px;
 }
-header .wrap  p {
+
+header .wrap p {
     white-space: pre-line;
 }
-header .wrap .liens{
+
+header .wrap .liens {
     padding: 3rem 0 8rem 0;
     display: flex;
     justify-content: center;
-    gap: 1rem ;
+    gap: 1rem;
 }
-header .wrap .liens a{
+
+header .wrap .liens a {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     color: var(--blanc);
@@ -84,11 +131,65 @@ header .wrap .liens a{
     border: 1px solid var(--blanc);
     border-radius: 50px;
 }
-header .wrap .liens a:first-child{
+
+header .wrap .liens a:first-child {
     color: var(--rouge-clair);
     background: var(--blanc);
     border: none;
 }
 
+/* SECTION DESIGN */
+#design {
+    padding: 5rem 0 13rem 0;
+    text-align: center;
+}
 
+#design .image {
+    padding: 3rem 0;
+}
 
+#design p {
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+/* SECTION INFRASTRUCTURE */
+#infra {
+    background: url('../images/bg-pattern-circles.svg'), linear-gradient(135deg ,var(--bg-blue-gris-tres-fonce), var(--bg-bleu-desature-tres-fonce));
+    background-position: 50% -2200%;
+    background-size: 160%;
+    background-repeat: no-repeat;
+    border-radius: 0 75px;
+    position: relative;
+
+    text-align: center;
+}
+
+#infra .img_phones {
+    position: absolute;
+    top: -27%;
+}
+
+#infra .wrap {
+    padding: 14rem 0 6rem 0;
+}
+#infra .wrap h2 {
+    font-size: 38px;
+    color: var(--blanc);
+}
+#infra .wrap p {
+    color: var(--blanc);
+    padding: 1rem;
+    font-weight: 100;
+}
+
+/* SECTION LAPTOP */
+#laptop{
+    padding: 5rem 0;
+    text-align: center;
+}
+#laptop h3{
+    padding-top: 1rem;
+}
+#laptop p {
+    padding: 1rem;
+}
