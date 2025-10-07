@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Overpass';
+    src: url('../font/Overpass/Overpass-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../font/Ubuntu/Ubuntu-Regular.ttf');
+}
+:root{
+    --rouge-clair : hsl(356, 100%, 66%) ;
+    --rouge-tres-clair : hsl(355, 100%, 74%);
+    --bleu-tres-fonce :  hsl(208, 49%, 24%);
+
+    --blanc :hsl(0, 0%, 100%);
+    --bleu-gris : hsl(240, 2%, 79%);
+    --bleu-gris-tres-fonce : hsl(207, 13%, 34%);
+    --bleu-noir-tres-fonce :  hsl(240, 10%, 16%); 
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Overpass';
+    font-size: 16px;
+    font-weight: 300;
+}
+a {
+    text-decoration: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+.desktop{display: none;}
+
+
