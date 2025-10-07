@@ -96,7 +96,7 @@ header {
     background: url('../images/bg-pattern-intro-mobile.svg'), linear-gradient(135deg, var(--bg-rouge-tres-clair), var(--bg-rouge-clair));
     background-position: 35% 32%;
     background-repeat: no-repeat;
-    border-radius: 0 0 0 50px;
+    border-radius: 0 0 0 100px;
     text-align: center;
     color: var(--blanc);
 }
@@ -108,12 +108,13 @@ header .wrap nav {
     padding: 3rem 0;
 }
 
-header .wrap nav #logo img {
+#logo img {
     width: 90px;
 }
 
 header .wrap p {
     white-space: pre-line;
+    color: var(--blanc);
 }
 
 header .wrap .liens {
@@ -192,4 +193,30 @@ header .wrap .liens a:first-child {
 }
 #laptop p {
     padding: 1rem;
+}
+footer {
+    background-color: var(--bleu-noir-tres-fonce);
+    text-align: center;
+    border-radius:  0 100px 0 0;
+    
+}
+footer .wrap{
+    padding: 4rem 0;
+}
+footer .wrap ul {
+    padding: 1rem 0;
+}
+footer .wrap ul li:first-child{
+    padding: 1rem 0;
+    color: var(--blanc);
+    font-weight: 500;
+}
+footer .wrap ul li{
+    padding: .25rem;
+}
+footer .wrap ul li a {
+    color: var(--bleu-gris);
+}
+footer .wrap #logo {
+    padding-bottom: 2rem;
 }
