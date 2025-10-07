@@ -15,6 +15,11 @@
     --bleu-gris : hsl(240, 2%, 79%);
     --bleu-gris-tres-fonce : hsl(207, 13%, 34%);
     --bleu-noir-tres-fonce :  hsl(240, 10%, 16%); 
+
+    --bg-rouge-tres-clair : hsl(13, 100%, 72%);
+    --bg-rouge-clair : hsl(353, 100%, 62%);
+    --bg-blue-gris-tres-fonce : hsl(237, 17%, 21%);
+    --bg-bleu-desature-tres-fonce : hsl(237, 23%, 32%);
 }
 *{
     padding: 0;
@@ -37,7 +42,53 @@ ul, ol, li {
 img{
     width: 100%;
 }
+h1{
+    font-weight: 400;
+    white-space: pre-line;
+    padding: 2rem 0 1rem 0;
+}
 .desktop{display: none;}
-header
+#openmenu{display: none;}
+.wrap{max-width: 325px;margin: 0 auto;}
+header{
+    background: url('../images/bg-pattern-intro-mobile.svg'), linear-gradient(135deg, var(--bg-rouge-tres-clair), var(--bg-rouge-clair));
+    background-position: 35% 32%;
+    background-repeat: no-repeat;
+    border-radius: 0 0 0 50px;
+    text-align: center;
+    color: var(--blanc);
+}
+header .wrap nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+header .wrap nav #logo img {
+    width: 90px;
+}
+header .wrap  p {
+    white-space: pre-line;
+}
+header .wrap .liens{
+    padding: 3rem 0 8rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem ;
+}
+header .wrap .liens a{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: var(--blanc);
+    padding: .8rem 1rem;
+    border: 1px solid var(--blanc);
+    border-radius: 50px;
+}
+header .wrap .liens a:first-child{
+    color: var(--rouge-clair);
+    background: var(--blanc);
+    border: none;
+}
+
 
 
